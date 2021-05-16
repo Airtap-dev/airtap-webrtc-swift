@@ -1,6 +1,6 @@
 # WebRTC Universial Binary
 
-This is WebRTC framework in XCFramework format for iOS (included M1 simulator support) and macOS. The support for Mac Catalyst is in developing.
+This is WebRTC framework in XCFramework format for iOS (included M1 simulator support) and macOS.
 
 Google provides the official builds for iOS, if all you need is iOS build, get it from Google:
 
@@ -9,21 +9,17 @@ Google provides the official builds for iOS, if all you need is iOS build, get i
 
 ## Installation
 
-### Manual 
-
-Download the XCFramework at [Release](https://github.com/alexpiezo/WebRTC/releases) and drag it into your Xcode project.
-
 ### Swift Package Manager 
 
 Requires Swift 5.3 / Xcode 12+.
 
-Add WebRTC repository https://github.com/alexpiezo/WebRTC.git via Swift Package Manager  
+Add WebRTC repository `git@github.com:Airtap-dev/airtap-webrtc-swift.git` via Swift Package Manager  
 
 Alternatively, to integrate via a Package.swift manifest instead of Xcode, you can add WebRTC to your dependencies array of your package with
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/alexpiezo/WebRTC.git", .upToNextMajor(from: "1.1.4"))
+    .package(url: "git@github.com:Airtap-dev/airtap-webrtc-swift.git", .branch(from: "main"))
 ]
 ```
 
